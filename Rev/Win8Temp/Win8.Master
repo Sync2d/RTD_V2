@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Win8.master.cs" Inherits="Win8Temp.Win8" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link rel="stylesheet" href="css/style.default.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/responsive-tables.css" />
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="js/flot/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="js/flot/jquery.flot.resize.min.js"></script>
+    <script type="text/javascript" src="js/responsive-tables.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="mainwrapper">
+            <div class="header">
+                <div class="logo">
+                    <a href="dashboard.html"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <div class="headerinner">
+            <ul class="headmenu">
+                <li class="right">
+                    <div class="userloggedinfo">
+                        <img src="images/thumbs/user.png" alt="" />
+                        <div class="userinfo">
+                            <h5>Wilson Pereira</h5>
+                            <ul>
+                                <li><a href="">Definições de Conta</a></li>
+                                <li><a href="index.html">Sair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul><!--headmenu-->
+        </div>
+            </div>
+    
+            <div class="leftpanel">
+                <div class="leftmenu">        
+                    <ul class="nav nav-tabs nav-stacked">
+            	        <li class="nav-header">Menu</li>
+                        <li class="active"><a href="dashboard.html"><span class="iconfa-home"></span> Inicio</a></li>
+                    </ul>
+                </div><!--leftmenu-->
+            </div><!-- leftpanel -->
+            <div class="rightpanel">
+                <div class="maincontent">
+                    <div class="maincontentinner">
+                        <div class="row-fluid">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <div style="padding-left:40%; padding-top: 15%;" >
+                        <p style="color:red;">&copy; 2014. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
